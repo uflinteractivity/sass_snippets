@@ -1,0 +1,12 @@
+$icons: (
+  checkmark: a,
+  plus: b,
+  minus: c
+);
+
+/* For each key in the map, created an own class */
+@each $name, $value in $icons {
+  .icon--#{$name} {
+    content: $value;
+  }
+}

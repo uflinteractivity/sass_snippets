@@ -1,0 +1,32 @@
+$category-colors :              (imom-morning, $ff-yellow, $gray-8),
+                                (movie-monitor, $ff-coral, white),
+                                (pillow-talk, $ff-l-blue, white),
+                                (susan, $ff-limey-green, white),
+                                (marriage, $ff-red, white),
+                                (family-fun, $ff-orange, white),
+                                (printables, $ff-teal, white),
+                                (mom-life, $ff-blue, white),
+                                (quotes, $ff-purple, white),
+                                (parenting, $ff-green, white);
+
+@each $color, $bg-color, $text-color in $category-colors {
+    .h3--category-#{$color} {
+        background: #{$bg-color} !important;
+        color: #{$text-color} !important;
+    }
+    .post-title--#{$color} a:hover {
+        color: #{$bg-color} !important;
+    }
+
+    .cards__one-card__footer--#{$color} a.read-more:hover {
+        color: #{$bg-color} !important;
+    }
+
+    .category-color--#{$color} {
+        background: #{$bg-color} !important;
+    }
+
+    .color--#{$color} {
+        color: #{$bg-color} !important;
+    }
+}

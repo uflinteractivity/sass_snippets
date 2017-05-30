@@ -1,0 +1,6 @@
+$list: “Amy”, “Henry”, “Isaac”, “Adele”;
+@each $person in $list {
+    .avatar—#{$person} {
+        background: url(‘avatars/#{$person}.jpg”) no-repeat;
+    }
+}

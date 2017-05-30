@@ -1,0 +1,7 @@
+$class-slug: span !default;
+
+@for $i from 1 through 4 {
+    .#{$class-slug}-#{$i} {
+        width: 60px + $i
+    }
+}

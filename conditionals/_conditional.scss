@@ -1,0 +1,11 @@
+$white-theme: true !default;
+
+@if $white-theme {
+    @debug “we’re using the #{$white-theme}”;
+    background: white;
+    text: black;
+} @else {
+    @debug “we’re using the #{$black-theme}”;
+    background: black;
+    text: white;
+}

@@ -1,0 +1,10 @@
+/* 5 is the number of list items and the number within $list */
+$list: "0 0", "50px 0", "100px 0", "150px 0", "200px 0";
+
+@for $i from 1 through 5 {
+ li:nth-child(#{$i}) {
+   $imgKey: random(5);
+   $nth: nth($list, $imgKey);
+   background-position: #{$nth};
+ }
+}

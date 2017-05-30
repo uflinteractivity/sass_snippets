@@ -1,0 +1,11 @@
+$buttons:   (success, green, white),
+            (warning, yellow, black),
+            (danger, red, white);
+
+/* For each key in the map, created an own class */
+@each $name, $background, $text in buttons {
+  .button--#{$name} {
+    background: $background;
+    color: $text;
+  }
+}
